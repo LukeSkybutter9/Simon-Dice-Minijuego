@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to top,black,#0a0069);
+    min-height: 1000px;
+    overflow: hidden;
+}
+
+.contenedor{
+    margin-top: 8%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 3px 3px 10px;
+    display: grid;
+    grid-template-columns: 30% 67%;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#infoJuego{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5efff;
+    box-shadow: 3px 3px 10px;
+    font-family:Stone Humanist SC;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.titulo{
+    font-family: Avionic;
+}
+
+.juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(to bottom,#0a0069, white)
+}
+
+#contenedorBotones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 10px;
+    background-color: black;
+}
+
+.panel{
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+}
+
+.panel:active,
+.active{
+    filter: brightness(175%);
+}
+
+.arriba-izquierda-panel{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-top-left-radius: 200px;
+    background-color: green;
+}
+
+.arriba-derecha-panel{
+    margin-bottom: 5px;
+    border-top-right-radius: 200px;
+    background-color: rgb(140, 0, 0);
+}
+
+.abajo-izquierda-panel{
+    margin-right: 5px;
+    margin-top: 5px;
+    border-bottom-left-radius: 200px;
+    background-color: rgb(255, 187, 0);
+}
+
+.abajo-derecha-panel{
+    margin-top: 5px;
+    border-bottom-right-radius: 200px;
+    background-color: rgb(0, 0, 147);
+}
+
+#ronda{
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Avionic;
+}
+
+#botonInicio{
+    width: 100%;
+    height: 40px;
+    font-family: Avionic;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.5s;
+    background: linear-gradient(to bottom,#0a0069, black)
+}
+
+#botonInicio:hover{
+    transform: scale(1.1);
+}
+
+
+/*--------------------------FUENTES-----------------------------*/
+
+
+@font-face {/*-------Stone Humanist SC---------*/
+    font-family: Stone Humanist SC;
+    src: url(../fuentes/StoneSansOSITCTTMedium.ttf);
+}
+
+
+@font-face {/*-------Avionic---------*/
+    font-family: Avionic;
+    src: url(../fuentes/Avionic.otf);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
